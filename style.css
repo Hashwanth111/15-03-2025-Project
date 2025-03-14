@@ -69,7 +69,7 @@
     margin: 10px auto;
     text-align: center;
 }
-select {
+.select {
     width: 80%;
     padding: 10px;
     font-size: 1rem;
@@ -81,8 +81,7 @@ select {
     cursor: pointer;
     transition: all 0.3s;
 }
-select:hover {
-    
+.select:hover {
     background: #0000ff;
 }
 .MN{
@@ -383,34 +382,80 @@ select:hover {
 }
 
 /* footer */
-.section3{
-    width: 100%;
-    aspect-ratio: 1/0.3;
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    background-color: black;
-}
-.footertable{
-    width: 80%;
-    aspect-ratio: 1/0.3;
+.grid{
     display: grid;
-    grid-template-columns: 1fr 1fr 1fr 1fr;
+    grid-template-columns: repeat(2,1fr) 40%;
+    width: 80%;
+    aspect-ratio: 1/0.4;
+    gap: 2rem;
+    margin: auto;
+    font-size: 1.1rem;
+    line-height: 2;
 }
-
-.footertable ul{
-    color: #0000ff;
-    list-style: none;
-      
-}
-.footertable ul a{
+.grid a{
     text-decoration: none;
-    color: #fff;
-    
+    color: black;
+    line-height: 2;
 }
-.footertable ul h1{
-    font-size: 1.3rem;
-
+.divv{
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+}
+.f-h1{
+    padding-left: 3em;
+    font-size: 3rem;
+    padding-bottom: 5rem;
+}
+.form-container 
+{
+    display: flex;
+    width: 380px;
+    overflow: hidden;
+    background-color: #eee;
+}
+input {
+    flex: 1;
+    border: none;
+    padding: 15px;
+    font-size: 16px;
+    outline: none;
+    background: none;
+}
+button {
+    border: none;
+    background: blue;
+    color: white;
+    padding: 15px 25px;
+    font-size: 16px;
+}
+.f-ul{
+    list-style: none;
+    display: flex;
+    margin: 0;
+    padding: 0;
+}
+.f-list{
+    width: 15%;
+    /* padding: 10px; */
+    margin-top: 10px;
+}
+.f-img{
+    width: 90%;
+}
+.f-select
+{
+    border: none;
+    padding: 1%;
+}
+.f-select2{
+    padding: 1%;
+    width: 50%;
+    border: none;
+}
+.footer{
+    width: 100%;
+    aspect-ratio: 1/0.6
 }
 
     @media screen and (width < 1200px) 
@@ -439,7 +484,7 @@ select:hover {
         }
         .oneImage-pic{
             width: 100%;
-            /* height: auto; */
+
             aspect-ratio: 1/0.5;
 
         }
@@ -455,6 +500,16 @@ select:hover {
         }
         .nav2_ul{
             font-size: 0.8rem;
+        }
+        .grid{
+            display: grid;
+            grid-template-columns: 1fr;
+            width: 90%;
+            aspect-ratio: 1/0.5;
+            gap: 5rem;
+            margin: auto;
+            font-size: 0.8rem;
+            line-height: 2;
         }
     }
 
@@ -484,21 +539,6 @@ select:hover {
     }
     .oneImage-content-p,.oneImage-content-a{
         font-size: 1rem;
-    }
-    .section3{
-        width: 100%;
-        aspect-ratio: 1/1;
-        display: flex;
-        justify-content: center;
-        align-items: center;
-        background-color: black;
-    }
-    .footertable{
-        width: 80%;
-        aspect-ratio: 1/0.3;
-        display: grid;
-        grid-template-columns: 1fr 1fr ;
-        gap:20px ;
     }
     
 }
