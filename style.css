@@ -94,6 +94,7 @@ select:hover {
     position: sticky;
     top: 0;
     background-color: rgba(255, 255, 255,0.8);
+    z-index: 1;
 }
 .nav2_ul{
     display: grid;
@@ -265,6 +266,7 @@ select:hover {
     width: 60%;
     height: 100%;
     background-color:#b6ffc0;
+    
 }
 .photo11{
     position: absolute;
