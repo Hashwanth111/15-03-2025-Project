@@ -540,6 +540,16 @@ button {
     .oneImage-content-p,.oneImage-content-a{
         font-size: 1rem;
     }
+    .grid{
+        display: grid;
+        grid-template-columns: 1fr;
+        width: 90%;
+        aspect-ratio: 1/0.5;
+        gap: 5rem;
+        margin: auto;
+        font-size: 0.8rem;
+        line-height: 2;
+    }
     
 }
 /* Responsive Design */
